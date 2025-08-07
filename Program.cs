@@ -65,7 +65,27 @@
             //Console.WriteLine($"B: {K}"); 
             #endregion
 
+            #region GenericEX02
+            //// Linear Ssearch
 
+            //// 4 - 7 - 5 - 8 - 9 - 10 - 1 - 2 - 3 - 12 - 13 - 14
+
+
+            ////int[] Numbers = { 8, 7, 6, 1, 2, 3, 4, 5, 6, 12, -1, 13, 9 };
+
+            ////int Index = Helper.LinearSearch(Numbers, 4);
+
+            ////Console.WriteLine($"Index : {Index}");
+
+            //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Salary = 12000, Age = 30 };
+            //Employee E02 = new Employee() { Id = 2, Name = "Ali", Salary = 13000, Age = 28 };
+            //Employee E03 = new Employee() { Id = 3, Name = "Omar", Salary = 15000, Age = 32 };
+
+            //Employee[] employees = { E01, E02, E03 };
+
+            //int Index = Helper.LinearSearch(employees, E03);
+            //Console.WriteLine($"Index: {Index}"); 
+            #endregion
 
 
 
