@@ -6,19 +6,32 @@ using System.Threading.Tasks;
 
 namespace AssignmentADV01
 {
-    internal static class Helper
+    internal static class Helper<T>
     {
-        public static void SWAP(ref int X, ref int Z)
+        //public static void SWAP(ref int X, ref int Z)
+        //{
+        //    int Temp = X;
+        //    X = Z; 
+        //    Z = Temp;
+        //}
+        //public static void SWAP(ref double X, ref double Z)
+        //{
+        //    double Temp = X;
+        //    X = Z;
+        //    Z = Temp;
+        //}
+
+        public static void SWAP<T>(ref T X, ref T Z)
         {
-            int Temp = X;
+            T Temp = X;
             X = Z; 
             Z = Temp;
         }
-        public static void SWAP(ref double X, ref double Z)
+
+        public static void Print(T data)
         {
-            double Temp = X;
-            X = Z;
-            Z = Temp;
+            Console.WriteLine(data);
         }
+
     }
 }
