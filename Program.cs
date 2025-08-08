@@ -1,4 +1,6 @@
-﻿namespace AssignmentADV01
+﻿using System.Drawing;
+
+namespace AssignmentADV01
 {
     internal class Program
     {
@@ -115,8 +117,51 @@
             //    Console.WriteLine("E01 != E02"); 
             #endregion
 
+            #region GenericEX03 : Bubble Sort
+            // 2,3,9,8,7,6,5,4,1,12,-1,0
 
+            // Sorting : Bubble Sort 
 
+            //int[] numbers = { 2, 3, 9, 8, 7, 6, 5, 4, 1, 12, -1, 0 };
+
+            //Helper.PrintArray(numbers);
+            //Console.WriteLine();
+
+            //Helper.BubbleSort(numbers); // Sorting Asscending
+
+            //Helper.PrintArray(numbers);
+
+            //Point[] points =
+            //{
+            //    new Point(6, 6),
+            //    new Point(2, 2),
+            //    new Point(4, 4),
+            //    new Point(3, 3),
+            //    new Point(1, 1),
+            //    new Point(5, 5)
+            //};
+
+            //Helper.BubbleSort(points);
+
+            //Helper.PrintArray(points);
+
+            // IComparable : CompareTo
+            // int
+            // + : Caller > Parameter
+            // - : Caller < Parameter
+            // 0 : Caller = Parameter 
+            #endregion
+
+            #region is and as operator
+            //Point P01 = new Point(3, 3);
+            //Point P02 = new Point(2, 2);
+
+            //if (P01.CompareTo("Ahmed") > 0)
+            //    Console.WriteLine("P01 is Greater Than P02");
+            //else
+            //    Console.WriteLine("P01 is not Greater Than P02");
+
+            #endregion
 
 
 
