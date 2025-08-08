@@ -4,6 +4,41 @@ namespace AssignmentADV01
 {
     internal class Program
     {
+        #region Q02
+        //void ReverseArrayList(ArrayList list)
+        //{
+        //    int left = 0;
+        //    int right = list.Count - 1;
+
+        //    while (left < right)
+        //    {
+        //        object temp = list[left];
+        //        list[left] = list[right];
+        //        list[right] = temp;
+
+        //        left++;
+        //        right--;
+        //    }
+        //} 
+        #endregion
+
+        #region Q03
+        //static List<int> GetEvenNumbers(List<int> numbers)
+        //{
+        //    List<int> evenList = new List<int>();
+
+        //    foreach (int num in numbers)
+        //    {
+        //        if (num % 2 == 0)
+        //        {
+        //            evenList.Add(num);
+        //        }
+        //    }
+
+        //    return evenList;
+        //} 
+        #endregion
+
         static void Main(string[] args)
         {
             #region GenericEX01 : SWAP
@@ -162,6 +197,85 @@ namespace AssignmentADV01
             //    Console.WriteLine("P01 is not Greater Than P02");
 
             #endregion
+
+            #region Q01
+            /* 1. create a generic Range<T> class that represents a range of values from a
+                      minimum value to a maximum value. The range should support basic
+                      operations such as checking if a value is within the range and determining
+                      the length of the range.
+                      Requirements:
+                      1. Create a generic class named Range<T> where T represents the type of
+                      values.
+                      2. Implement a constructor that takes the minimum and maximum values
+                      to define the range.
+                      3. Implement a method IsInRange(T value) that returns true if the given
+                      value is within the range, otherwise false.
+                      4. Implement a method Length() that returns the length of the range (the
+                      difference between the maximum and minimum values).
+                      5. Note: You can assume that the type T used in the Range<T> class
+                      implements the IComparable<T> interface to allow for comparisons. */
+
+            //Range<int> range = new Range<int>(5, 15);
+            //Console.WriteLine(range); 
+            //Console.WriteLine("Is 10 in range? " + range.IsInRange(10)); 
+            //Console.WriteLine("Is 20 in range? " + range.IsInRange(20)); 
+            //Console.WriteLine("Length: " + range.Length()); 
+            #endregion
+
+            #region Q02
+            /*2. You are given an ArrayList containing a sequence of elements. try to
+                     reverse the order of elements in the ArrayList in-place(in the same
+                     arrayList) without using the built-in Reverse. Implement a function that
+                     takes the ArrayList as input and modifies it to have the reversed order of
+                     elements.*/
+
+
+            //ArrayList L01 = new ArrayList() { 1, 2, 3, 4, 5 };
+            //Console.WriteLine("************** Before Reverse **************");
+            //foreach (var item in L01)
+            //{
+            //    Console.Write($"{item} ");
+            //}
+
+            //Console.WriteLine();
+            //ReverseArrayList(L01);
+            //Console.WriteLine();
+
+            //Console.WriteLine("************** After Reverse **************");
+            //foreach (var item in L01)
+            //{
+            //    Console.Write($"{item} ");
+            //} 
+            #endregion
+
+            #region Q03
+            /*3. You are given a list of integers. Your task is to find and return a new list
+                     containing only the even numbers from the given list.*/
+
+            //List<int> Numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8 };
+
+            //List<int> evens = GetEvenNumbers(Numbers);
+
+            //Console.WriteLine("Even Numbers:");
+            //foreach (int num in evens)
+            //{
+            //    Console.Write(num + " ");
+            //} 
+            #endregion
+
+            /*4. implement a custom list called FixedSizeList<T> with a predetermined
+                 capacity. This list should not allow more elements than its capacity and
+                 should provide clear messages if one tries to exceed it or access invalid
+                 indices.
+                 Requirements:
+                 1. Create a generic class named FixedSizeList<T>.
+                 2. Implement a constructor that takes the fixed capacity of the list as a
+                 parameter.
+                 
+                 3. Implement an Add method that adds an element to the list, but throws
+                 an exception if the list is already full.
+                 4. Implement a Get method that retrieves an element at a specific index in
+                 the list but throws an exception for invalid indices.*/
 
 
 
