@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            #region Generics
+            #region GenericEX01 : SWAP
 
             // Generics :
             // C# feature 2005 C# 2.0
@@ -65,8 +65,8 @@
             //Console.WriteLine($"B: {K}"); 
             #endregion
 
-            #region GenericEX02
-            //// Linear Ssearch
+            #region GenericEX02 : Linear Search
+            //// Linear Search
 
             //// 4 - 7 - 5 - 8 - 9 - 10 - 1 - 2 - 3 - 12 - 13 - 14
 
@@ -86,6 +86,37 @@
             //int Index = Helper.LinearSearch(employees, E03);
             //Console.WriteLine($"Index: {Index}"); 
             #endregion
+
+            #region Equality in class and struct
+            //// Equality in class and struct
+            //// Equals
+            //// Class  Has Equals Function which inherited from object Class --> Compare based on Refernce  
+            //// Struct Has Equals Function which inherited from object Class --> Compare based on Data
+            //// NOTE: Struct Don't Have ImplementationFor The == Operator 
+
+
+
+            //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Salary = 12000, Age = 30 };
+            //Employee E02 = new Employee() { Id = 1, Name = "Ahmed", Salary = 12000, Age = 30 };
+            ////Employee E02 = new Employee() { Id = 2, Name = "Ali", Salary = 13000, Age = 28 };
+
+            //Console.WriteLine($"E01: {E01.GetHashCode()}");
+            //Console.WriteLine($"E02: {E02.GetHashCode()}");
+
+
+            //if (E01.Equals(E02))
+            //    Console.WriteLine("E01 == E02");
+            //else
+            //    Console.WriteLine("E01 != E02");
+
+            //if (E01 == E02)
+            //    Console.WriteLine("E01 == E02");
+            //else
+            //    Console.WriteLine("E01 != E02"); 
+            #endregion
+
+
+
 
 
 

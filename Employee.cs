@@ -13,6 +13,22 @@ namespace AssignmentADV01
         public double Salary { get; set; }
         public int Age { get; set; }
 
+        public static bool operator ==(Employee left, Employee right)
+        {
+            return left.Id == right.Id && left.Name == right.Name && left.Age == left.Age && left.Salary == right.Salary;
+        }
+
+        public static bool operator !=(Employee left, Employee right)
+        {
+            return left.Id != right.Id || left.Name != right.Name || left.Age != left.Age || left.Salary != right.Salary;
+        }
+
+        public override bool Equals(object? obj)
+        {
+            Employee E = (Employee)obj;
+            return this == obj;
+        }
+
         public override string ToString()
         {
             return $"Id: {Id}, Name: {Name}, Salary: {Salary}, Age: {Age}";
